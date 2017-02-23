@@ -48,5 +48,5 @@
 
 
 
-###2.4 User Acceptance Testing
+###2.4 Regression Testing
 
