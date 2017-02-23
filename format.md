@@ -47,6 +47,3 @@
 
 
 
-
-###2.4 Regression Testing
-
