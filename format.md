@@ -4,32 +4,35 @@
 
 ###2.1 Unit Testing
 
-| ID  | Test Area | Scenario | Purpose | Steps |Expected Result| Actual Result|Pass/Fail |Additional Information|
-|---|---|---|---|---|---|---|---|---|
-| T1 | Functional | addPlayersToSystem |  |  | | | | |
-| T2  | Functional  | removePlayerFromSystem  |  | | | | | |
-| T3  | Functional  | displayHistoricalProfits | |  | | | | |
-| T4  | Functional  | displayProfitsByTotals  |  |  | | | | |
-| T5 |  Functional | displaySinglePlayerPrizes   |  |  | | | | |
-| T6  | Functional  | getAllPlayersTotals  |  |  | | | | |
-| T7  | Functional  | setTournament  |  |  | | | | |
-| T8  | Functional  | getTournament   |  |  | | | | |
-| T9  | Functional  | startTournament  |  |      | | | | |
-| T10  | Functional  | endTournament   |  |      | | | | |
-| T11  | Functional  | generateMatches  |  |  | | | | |
-| T12| Functional  | viewMatchList  |  |  | | | | |
-| T13| Functional  | getHouseProfit  |  |  | | | | |
-| T14| Functional  | generateMatches  |  |  | | | | |
-| T15| Functional  | calculatePrizesProfits  |  |  | | | | |
-| T16| Functional  | startMatch  |  |  | | | | |
-| T17| Functional  | endMatch  |  |  | | | | |
-| T18| Functional  | addToDatabase  |  |  | | | | |
-| T19| Functional  | removeFromDatabase  |  |  | | | | |
-| T20| Functional  | updateInDatabase  |  |  | | | | |
-| T21| Functional  | getDataFromDatabase  |  |  | | | | |
-| T22| Functional  | viewPlayerTotalPrizes  |  |  | | | | |
-| T23| Functional  | getAllPlayersTotals  |  |  | | | | |
-| T24  | UI  | Login Sequence  |  Verify screen flow from login screen to initial display screen | Login     to application, verify initial screen display | | | | |
+| ID  |  Purpose | Steps |Expected Result| Actual Result|Pass/Fail |Additional Information|
+|---|---|---|---|---|---|---|
+| T1 | addPlayersToSystem |1 Go to site http://demo.guru99.com
+2Enter UserId
+3Enter Password
+4Click Submit |  | | | | |
+| T2  | removePlayerFromSystem  |  | | | | | |
+| T3  | displayHistoricalProfits | |  | | | | |
+| T4  | displayProfitsByTotals  |  |  | | | | |
+| T5 |  displaySinglePlayerPrizes   |  |  | | | | |
+| T6  | getAllPlayersTotals  |  |  | | | | |
+| T7  | setTournament  |  |  | | | | |
+| T8  | getTournament   |  |  | | | | |
+| T9  | startTournament  |  |      | | | | |
+| T10  | endTournament   |  |      | | | | |
+| T11  | generateMatches  |  |  | | | | |
+| T12| viewMatchList  |  |  | | | | |
+| T13|getHouseProfit  |  |  | | | | |
+| T14|  generateMatches  |  |  | | | | |
+| T15| calculatePrizesProfits  |  |  | | | | |
+| T16|  startMatch  |  |  | | | | |
+| T17| endMatch  |  |  | | | | |
+| T18|addToDatabase  |  |  | | | | |
+| T19| removeFromDatabase  |  |  | | | | |
+| T20| updateInDatabase  |  |  | | | | |
+| T21| getDataFromDatabase  |  |  | | | | |
+| T22|  viewPlayerTotalPrizes  |  |  | | | | |
+| T23| getAllPlayersTotals  |  |  | | | | |
+
 
 
 ###2.2 Integration Testing
@@ -41,6 +44,7 @@
 | D2 | Functional | Remove player | Remove existing player from datastore |    | | | | |
 | D3 | Functional | Set result | End tournament early and set result of the match, save it in the system  |   | | | | |
 | D4 | Functional | Login | Verify Login |  | | | | |
+| T24  | UI  | Login Sequence  |  Verify screen flow from login screen to initial display screen | Login     to application, verify initial screen display | | | | |
 
 ###2.3 System Testing
 
