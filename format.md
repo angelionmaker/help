@@ -6,7 +6,7 @@
 
 | ID  |  Purpose | Steps |Expected Result| Actual Result|Pass/Fail |Additional Information|
 |---|---|---|---|---|---|---|
-| T1 | addPlayersToSystem |1 Go to site http://demo.guru99.com  2 Enter UserId  3 Enter Password  4 Click Submit |  | | | | |
+| T1 | addPlayersToSystem |1.Go to site 2. Enter UserId  3. Enter Password 4. Click Submit |  | | | | |
 | T2  | removePlayerFromSystem  |  | | | | | |
 | T3  | displayHistoricalProfits | |  | | | | |
 | T4  | displayProfitsByTotals  |  |  | | | | |
