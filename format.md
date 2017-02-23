@@ -44,5 +44,5 @@
 
 ###2.3 System Testing
 
-###2.4 Regression Testing
+###2.4 User Acceptance Testing
 
