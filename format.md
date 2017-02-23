@@ -6,41 +6,22 @@
 
 | ID  |  Purpose | Steps |Expected Result| Actual Result|Pass/Fail |Additional Information|
 |---|---|---|---|---|---|---|
-
-| T3  | Check display historical profits function |1.Go to TournmentManager class 2. Display all profits by time using displayHistoricalProfits 3. Verify profits in database |correct profits in time order | | | |
-
-| T4  | Check display profits by totals function  |1.Go to TournmentManager class 2. Display all profits by amount using displayProfitsByTotals 3. Verify total profits in database |correct total profits in order  | | | |
-
-| T5 | Check display single player's prizes function |1.Go to TournmentManager class 2. Display player's prizes using displaySinglePlayerPrizes 3. Verify player's prizes in database |correct player's prizes  | | | |
-
-| T6  | Check display players' respective total prizes function   |1.Go to TournmentManager class 2. Display player's prizes by total using getAllPlayersTotals 3. Verify player's prizes in database  |correct order of players' prizes in total  | | | |
-
-| T8  | Check get tournament function  |1.Go to Tournament class 2. Get a tournament using getTournament 3. Verify tournament |successfully get tournament | | | |
-
-| T9  | Check start tournament function |1.Go to Tournament class 2. Start a tournament using startTournament 3. Verify tournament status |Successfully start tournament | | | |
-
-| T10  | Check end tournament function |1.Go to Tournament class 2. End a tournament using endTournament 3. Verify tournament status  |  Successfully end tournament    | | | |
-
-| T12| Check view matches function  |1.Go to Tournament class 2. View all matches using viewMatchList  3. Verify matches  |  Display matches| | | |
-
-| T16| Check start match function  |1.Go to Match class 2. Start a match using startMatch   3. Verify match  |Correct match  | | | |
-
-| T17| Check end match function |1.Go to Match class 2. Start a match using startMatch   3. Verify match  |Successfully get winner  | |  | |
-
-
-
-
-| T18| Check add to database function |1.Go to SystemDatabase class 2. Add some info to database using addToDatabase   3. Verify info  |Correct info in database   | | | |
-
-| T19| Check remove from database function  |1.Go to SystemDatabase class 2. Remove some info from database using removeFromDatabase 3. Verify info in database | Successfully remove the info from database | | | |
-
-| T20| Check update to database function |1.Go to SystemDatabase class 2. Update some info in database using updateInDatabase 3. Verify info in database |Successfully update the info in database  | | | |
-
-| T21| Check get data from database function  |1.Go to SystemDatabase class 2. Get some info in database using getDataFromDatabase 3. Verify data  | Sucessfully get the data | | | |
-
-| T22| Check display player list and all prizes function   |1.Go to TournamentPlayer class 2. View player's username and prizes using viewPlayerTotalPrizes 3. Verify info  |Successfully display play list and prizes | | | |
-
-| T23| Check display player list and each player's total prize function   |1.Go to TournamentPlayer class 2. View player's username and his total prize using getAllPlayersTotals 3. Verify info |Successfully display play list and total prize  | | | |
+| T3  | Check display historical profits function | 1.Go to TournmentManager class 2. Display all profits by time using displayHistoricalProfits 3. Verify profits in database | correct profits in time order | | | |
+| T4  | Check display profits by totals function  | 1.Go to TournmentManager class 2. Display all profits by amount using displayProfitsByTotals 3. Verify total profits in database | correct total profits in order  | | | |
+| T5 | Check display single player's prizes function | 1.Go to TournmentManager class 2. Display player's prizes using displaySinglePlayerPrizes 3. Verify player's prizes in database | correct player's prizes  | | | |
+| T6  | Check display players' respective total prizes function   | 1.Go to TournmentManager class 2. Display player's prizes by total using getAllPlayersTotals 3. Verify player's prizes in database  | correct order of players' prizes in total  | | | |
+| T8  | Check get tournament function  | 1.Go to Tournament class 2. Get a tournament using getTournament 3. Verify tournament | successfully get tournament | | | |
+| T9  | Check start tournament function | 1.Go to Tournament class 2. Start a tournament using startTournament 3. Verify tournament status | Successfully start tournament | | | |
+| T10  | Check end tournament function | 1.Go to Tournament class 2. End a tournament using endTournament 3. Verify tournament status  |  Successfully end tournament    | | | |
+| T12| Check view matches function  | 1.Go to Tournament class 2. View all matches using viewMatchList  3. Verify matches  |  Display matches| | | |
+| T16| Check start match function  | 1.Go to Match class 2. Start a match using startMatch   3. Verify match  | Correct match  | | | |
+| T17| Check end match function | 1.Go to Match class 2. Start a match using startMatch   3. Verify match  | Successfully get winner  | |  | |
+| T18| Check add to database function | 1.Go to SystemDatabase class 2. Add some info to database using addToDatabase   3. Verify info  | Correct info in database   | | | |
+| T19| Check remove from database function  | 1.Go to SystemDatabase class 2. Remove some info from database using removeFromDatabase 3. Verify info in database | Successfully remove the info from database | | | |
+| T20| Check update to database function | 1.Go to SystemDatabase class 2. Update some info in database using updateInDatabase 3. Verify info in database | Successfully update the info in database  | | | |
+| T21| Check get data from database function  | 1.Go to SystemDatabase class 2. Get some info in database using getDataFromDatabase 3. Verify data  | Sucessfully get the data | | | |
+| T22| Check display player list and all prizes function   | 1.Go to TournamentPlayer class 2. View player's username and prizes using viewPlayerTotalPrizes 3. Verify info  | Successfully display play list and prizes | | | |
+| T23| Check display player list and each player's total prize function   | 1.Go to TournamentPlayer class 2. View player's username and his total prize using getAllPlayersTotals 3. Verify info | Successfully display play list and total prize  | | | |
 
 
 
