@@ -6,8 +6,8 @@
 
 | ID  |  Purpose | Steps |Expected Result| Actual Result|Pass/Fail |Additional Information|
 |---|---|---|---|---|---|---|
-| T1 |Check add player function |1.Go to TournmentManager class 2. Enter user info using addPlayersToSystem(TournamentPlayer)  3. Verify user info in database | The player info exists in database | | | |
-| T2  |Check remove Player function |1.Go to TournmentManager class 2. Remove user info using removePlayerFromSystem(TournamentPlayer)  3. Verify user info in database |The player info doesn't exist in database | | | |
+| T1 |Check add player function |1.Go to TournmentManager class 2. Enter user info using addPlayersToSystem(TournamentPlayer)  3. Verify player info in database | Successfully add player | | | |
+| T2  |Check remove Player function |1.Go to TournmentManager class 2. Remove user info using removePlayerFromSystem(TournamentPlayer)  3. Verify player info in database |Sucessfully remove player | | | |
 | T3  | Check display historical profits function | 1.Go to TournmentManager class 2. Display all profits by time using displayHistoricalProfits 3. Verify profits in database | correct profits in time order | | | |
 | T4  | Check display profits by totals function  | 1.Go to TournmentManager class 2. Display all profits by amount using displayProfitsByTotals 3. Verify total profits in database | correct total profits in order  | | | |
 | T5 | Check display single player's prizes function | 1.Go to TournmentManager class 2. Display player's prizes using displaySinglePlayerPrizes 3. Verify player's prizes in database | correct player's prizes  | | | |
@@ -16,6 +16,7 @@
 | T9  | Check start tournament function | 1.Go to Tournament class 2. Start a tournament using startTournament 3. Verify tournament status | Successfully start tournament | | | |
 | T10  | Check end tournament function | 1.Go to Tournament class 2. End a tournament using endTournament 3. Verify tournament status  |  Successfully end tournament    | | | |
 | T12| Check view matches function  | 1.Go to Tournament class 2. View all matches using viewMatchList  3. Verify matches  |  Display matches| | | |
+| T13| Check get house profit function  |1.Go to Tournament class 2. Display the house profit by using getHouseProfit 3. Verify house profit   |correct house profit  | | | |
 | T16| Check start match function  | 1.Go to Match class 2. Start a match using startMatch   3. Verify match  | Correct match  | | | |
 | T17| Check end match function | 1.Go to Match class 2. Start a match using startMatch   3. Verify match  | Successfully get winner  | |  | |
 | T22| Check display player list and all prizes function   | 1.Go to TournamentPlayer class 2. View player's username and prizes using viewPlayerTotalPrizes 3. Verify info  | Successfully display play list and prizes | | | |
@@ -26,29 +27,26 @@
 ###2.2 Integration Testing
 | ID  |  Purpose | Steps |Expected Result| Actual Result|Pass/Fail |Additional Information|
 |---|---|---|---|---|---|---|
-| T1 |Check add player function |1.Go to TournmentManager class 2. Enter user info using addPlayersToSystem(TournamentPlayer)  3. Verify user info in database | The player info exists in database | | | | |
-| T2  |Check remove Player function |1.Go to TournmentManager class 2. Remove user info using removePlayerFromSystem(TournamentPlayer)  3. Verify user info in database |The player info doesn't exist in database | | | | |
-
-| T7  | setTournament  |  |  | | | | |
-| T11  | Check generate matches function |1.Go to Tournament class 2. Generate all matches using generateMatches  3. Verify matches | Successfully generate matches |  | | | | |
-| T13| Check get house profit function  |1.Go to Tournament class 2. Display the house profit by using getHouseProfit 3. Verify house profit   |correct house profit  | | | | |
-| T14|  generateMatches  |  |  | | | | |
-| T15| calculatePrizesProfits  |  |  | | | | |
-
-| T18| Check add to database function | 1.Go to SystemDatabase class 2. Add some info to database using addToDatabase   3. Verify info  | Correct info in database   | | | |
-| T19| Check remove from database function  | 1.Go to SystemDatabase class 2. Remove some info from database using removeFromDatabase 3. Verify info in database | Successfully remove the info from database | | | |
-| T20| Check update to database function | 1.Go to SystemDatabase class 2. Update some info in database using updateInDatabase 3. Verify info in database | Successfully update the info in database  | | | |
-| T21| Check get data from database function  | 1.Go to SystemDatabase class 2. Get some info in database using getDataFromDatabase 3. Verify data  | Sucessfully get the data | | | |
-
-| ID  | Test Area | Scenario | Purpose | Steps |Expected Result| Actual Result|Pass/Fail |Additional Information|
-|---|---|---|---|---|---|---|---|---|
-| D1 | Functional | Add player | Add new player to application  |   | | | | |
-| D2 | Functional | Remove player | Remove existing player from datastore |    | | | | |
-| D3 | Functional | Set result | End tournament early and set result of the match, save it in the system  |   | | | | |
-| D4 | Functional | Login | Verify Login |  | | | | |
-| T24  | UI  | Login Sequence  |  Verify screen flow from login screen to initial display screen | Login     to application, verify initial screen display | | | | |
+| T1 | Check flow of data into database with TournmentManager class and TournamentPlayer class  | 1.Go to TournmentManager class 2. Use function addPlayersToSystem with data from TournamentPlayer class passed in 3. Verify player info in database | The player info exists in database | | | |
+| T2  | Check data removal from database with TournmentManager class and TournamentPlayer class | 1.Go to TournmentManager class 2. Remove player info using removePlayerFromSystem with TournamentPlayer passed in  3. Verify player info in database | The player info doesn't exist in database | | | |
+| T7  | Check flow of data into Tournament class  | 1.Go to TournmentManager class 2. Create a tournament by calling tournament class 3. Pass in TournamentPlayer list into setTournament function  4. Verify the tournament initial state | Initial info of tournament should be correct |  | | |
+| T11  | Check flow of data into database with TournmentManager class, tournament class, SingleEliminationAlgorithm class, and TournamentPlayer class | 1.Go to TournmentManager class 2. Generate all matches using generateMatches with info from TournamentPlayer passed in  3. Verify matches in database | Matches info correctly exist in database  | | | |
+| T13| Check flow of data between Tournament class and CalculationAlgorithm class  | 1.Go to Tournament class 2. Calling calculatePrizesProfits method in CalculationAlgorithm class by passing relevent info 3. Verify house profit  | correct house profit  | | | |
+| T18| Check data flow into database between SystemDatabase class and database class| 1.Go to SystemDatabase class 2. Add some info to database using addToDatabase   3. Verify info  | Correct info in database   | | | |
+| T19| Check data removal from database between SystemDatabase class and database class  | 1.Go to SystemDatabase class 2. Remove some info from database using removeFromDatabase 3. Verify info in database | Successfully remove the info from database | | | |
+| T20| Check update in database between SystemDatabase class and database class | 1.Go to SystemDatabase class 2. Update some info in database using updateInDatabase 3. Verify info in database | Successfully update the info in database  | | | |
+| T21| Check data flow out from database between SystemDatabase class and database class| 1.Go to SystemDatabase class 2. Get some info in database using getDataFromDatabase 3. Verify data  | Sucessfully get the data | | | |
 
 ###2.3 System Testing
+| ID  |  Purpose | Steps |Expected Result| Actual Result|Pass/Fail |Additional Information|
+|---|---|---|---|---|---|---|
+| S1 | Check Customer Login with valid Data | 1. Choose character 2. Enter UserId 3. Enter Password 4. Click SignIn| User should Login into application |   | | |
+| S2 | Check Customer Login with invalid Data  | 1. Choose character 2. Enter UserId 3. Enter Password 4. Click SignIn| User should not Login into application |   | | |
+| S3 | Check UI display | 1. Login as a character 2. Click on any display botton available on the screen 3. Verify the results| Display correct info on the screen|   | | |
+| S4 | Check UI input | 1. Login as a character 2. Input data on any input box available on the screen 3. Verify the results | Results shoud match our prepared sample data |  | | |
+
+
+
 
 ###2.4 User Acceptance Testing
 
