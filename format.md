@@ -17,6 +17,10 @@
 | T12| Check view matches function  |1.Go to Tournament class 2. View all matches using viewMatchList  3. Verify matches  |  Display matches| | | |
 | T16| Check start match function  |1.Go to Match class 2. Start a match using startMatch   3. Verify match  |Correct match  | | | |
 | T17| Check end match function |1.Go to Match class 2. Start a match using startMatch   3. Verify match  |Successfully get winner  | |  | |
+
+
+
+
 | T18| Check add to database function |1.Go to SystemDatabase class 2. Add some info to database using addToDatabase   3. Verify info  |Correct info in database   | | | |
 | T19| Check remove from database function  |1.Go to SystemDatabase class 2. Remove some info from database using removeFromDatabase 3. Verify info in database | Successfully remove the info from database | | | |
 | T20| Check update to database function |1.Go to SystemDatabase class 2. Update some info in database using updateInDatabase 3. Verify info in database |Successfully update the info in database  | | | |
